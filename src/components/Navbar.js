@@ -6,7 +6,7 @@ import Shop from './Shop';
 function Navbar() {
   return (
     <BrowserRouter>
-      <nav>
+      <nav className='navbar'>
         <Link to="/">AK Skin Mart</Link>
         <ul className='navlinks'>
           <li>
