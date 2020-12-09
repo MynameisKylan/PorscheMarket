@@ -1,5 +1,19 @@
+@font-face {
+  font-family: 'Porsche Next';
+  src: url('https://cdn.ui.porsche.com/porsche-design-system/fonts/porsche-next-w-la-regular.min.1263496c6f00026b958f812a963a424c.woff2')
+}
+
+#root {
+  min-height:100vh;
+  position:absolute;
+  top:0;
+  width:100%;
+}
+
 .App {
   text-align: center;
+  font-family: 'Porsche Next';
+  position:relative;
 }
 
 a {
@@ -8,12 +22,15 @@ a {
 }
 
 .navbar {
-  height:70px;
-  background-color:#2a475e ;
+  height:10vh;
   display:flex;
   justify-content: space-around;
   align-items:center;
+  background-color:rgb(35,35,35);
   color:white;
+  position:fixed;
+  top:0;
+  width:100%;
 }
 
 .navlinks {
@@ -29,13 +46,68 @@ a {
 
 .navbar a {
   box-sizing:border-box;
-  padding:2em;
+  padding:1.5em;
   height:100%;
   display:flex;
   align-items: center;
+  font-size:1.5em;
 }
 
 .navbar a:hover {
-  background-color:rgba(0,0,0,0.3);
+  background-color:rgb(70,70,70);
   transition: all 0.2s ease;
+}
+
+h1 {
+  font-size: 24px;
+  padding: 2em;
+}
+
+.home {
+  height:90vh;
+  background: url(./images/Porsche-911-Turbo-S.jpg) no-repeat center;
+  background-size: cover;
+  color:white;
+}
+
+.content {
+  position:relative;
+  top:10vh;
+  text-align:center;
+}
+
+.inventory {
+  display:flex;
+  width:100%;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+.card {
+  width: 400px;
+  margin:1em;
+  border-radius:5px;
+}
+
+.card-img {
+  width: 400px;
+}
+
+.card-info {
+  font-size:1.2em;
+}
+
+button {
+  border:1px solid black;
+  background:white;
+  padding:0.5em;
+  font-size:1.5em;
+  color:black;
+  margin:0.5em;
+}
+
+button:hover {
+  color:#d5001c;
+  border: 1px solid #d5001c;
+  transition:all 0.3s ease;
+  cursor:pointer;
 }

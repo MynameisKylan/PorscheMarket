@@ -1,28 +1,19 @@
 import React from "react";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
-import Home from './Home';
-import Shop from './Shop';
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <BrowserRouter>
       <nav className='navbar'>
-        <Link to="/">AK Skin Mart</Link>
+        <Link to="/">PorscheTopia</Link>
         <ul className='navlinks'>
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/shop">Shop</Link>
+            <Link to="/inventory">Inventory</Link>
           </li>
         </ul>
       </nav>
-
-      <Switch>
-        <Route exact path='/' component={Home}/>
-        <Route path='/shop' component={Shop} />
-      </Switch>
-    </BrowserRouter>
   );
 }
 
