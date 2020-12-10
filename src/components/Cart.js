@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import CurrencyFormatter from "./CurrencyFormatter";
 import Card from "./Card";
 
@@ -16,13 +17,25 @@ function Cart(props) {
       <h1>Your Cart</h1>
       {props.items.map((item, index) => {
         return (
-          <div className='cartItem'>
+          <div className="cartItem">
             <Card image={item.image} price={item.price} name={item.name} />
-            <p>{`Quantity: `}<input id={index} className='qty' type='number' value={item.quantity} onChange={props.updateQuantity}></input></p>
+            <p>
+              {`Quantity: `}
+              <input
+                id={index}
+                className="qty"
+                type="number"
+                value={item.quantity}
+                onChange={props.updateQuantity}
+              ></input>
+            </p>
           </div>
         );
       })}
-      <p>{`Total: ${CurrencyFormatter.format(calculateTotal())}`}</p>
+      <h2>{`Total: ${CurrencyFormatter.format(calculateTotal())}`}</h2>
+      <Link to="/checkout">
+        <button>Checkout</button>
+      </Link>
     </div>
   );
 }

@@ -6,7 +6,8 @@ import Home from "./components/Home";
 import Inventory from "./components/Inventory";
 import Car from "./components/Car";
 import seedCars from "./seedCars";
-import Cart from './components/Cart.js';
+import Cart from './components/Cart';
+import Checkout from './components/Checkout';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -67,6 +68,9 @@ function App() {
         />
         <Route exact path='/cart'>
           <Cart items={cart} updateQuantity={updateQuantity} />
+        </Route>
+        <Route exact path='/checkout'>
+          <Checkout items={cart} />
         </Route>
       </Switch>
     </BrowserRouter>
