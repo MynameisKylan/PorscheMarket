@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.93f292c8.chunk.css",
-    "main.js": "/static/js/main.05ca6e6f.chunk.js",
-    "main.js.map": "/static/js/main.05ca6e6f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.56401abb.js",
-    "runtime-main.js.map": "/static/js/runtime-main.56401abb.js.map",
-    "static/js/2.7ed6a0fc.chunk.js": "/static/js/2.7ed6a0fc.chunk.js",
-    "static/js/2.7ed6a0fc.chunk.js.map": "/static/js/2.7ed6a0fc.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.93f292c8.chunk.css.map": "/static/css/main.93f292c8.chunk.css.map",
-    "static/js/2.7ed6a0fc.chunk.js.LICENSE.txt": "/static/js/2.7ed6a0fc.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/Porsche-911-Turbo-S.91f050b0.jpg"
+    "main.css": "/PorscheMarket/static/css/main.ba544da5.chunk.css",
+    "main.js": "/PorscheMarket/static/js/main.39234e5e.chunk.js",
+    "main.js.map": "/PorscheMarket/static/js/main.39234e5e.chunk.js.map",
+    "runtime-main.js": "/PorscheMarket/static/js/runtime-main.e4d0cb64.js",
+    "runtime-main.js.map": "/PorscheMarket/static/js/runtime-main.e4d0cb64.js.map",
+    "static/js/2.7ed6a0fc.chunk.js": "/PorscheMarket/static/js/2.7ed6a0fc.chunk.js",
+    "static/js/2.7ed6a0fc.chunk.js.map": "/PorscheMarket/static/js/2.7ed6a0fc.chunk.js.map",
+    "index.html": "/PorscheMarket/index.html",
+    "static/css/main.ba544da5.chunk.css.map": "/PorscheMarket/static/css/main.ba544da5.chunk.css.map",
+    "static/js/2.7ed6a0fc.chunk.js.LICENSE.txt": "/PorscheMarket/static/js/2.7ed6a0fc.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/PorscheMarket/static/media/Porsche-911-Turbo-S.91f050b0.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.56401abb.js",
+    "static/js/runtime-main.e4d0cb64.js",
     "static/js/2.7ed6a0fc.chunk.js",
-    "static/css/main.93f292c8.chunk.css",
-    "static/js/main.05ca6e6f.chunk.js"
+    "static/css/main.ba544da5.chunk.css",
+    "static/js/main.39234e5e.chunk.js"
   ]
 }
