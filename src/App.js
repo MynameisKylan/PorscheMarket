@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Inventory from "./components/Inventory";
 import Car from "./components/Car";
 import seedCars from "./seedCars";
+import Cart from './components/Cart.js';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -25,6 +26,12 @@ function App() {
       setCart(newCart);
     }
   };
+
+  const updateQuantity = (event) => {
+    let newCart = [...cart];
+    newCart[event.target.id].quantity = parseInt(event.target.value);
+    setCart(newCart);
+  }
 
   const findCar = (model) => {
     return seedCars.find((car) => car.name === model);
@@ -58,6 +65,9 @@ function App() {
             />
           )}
         />
+        <Route exact path='/cart'>
+          <Cart items={cart} updateQuantity={updateQuantity} />
+        </Route>
       </Switch>
     </BrowserRouter>
   );

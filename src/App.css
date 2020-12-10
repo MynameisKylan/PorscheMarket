@@ -31,6 +31,7 @@ a {
   position:fixed;
   top:0;
   width:100%;
+  z-index:99;
 }
 
 .navlinks {
@@ -60,7 +61,7 @@ a {
 
 h1 {
   font-size: 24px;
-  padding: 2em;
+  padding: 1em;
 }
 
 .home {
@@ -114,4 +115,16 @@ button:hover {
 
 .fa {
   padding:0.3em;
+}
+
+.cartItem {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:1em;
+}
+
+.qty {
+  width:2.6em;
 }
